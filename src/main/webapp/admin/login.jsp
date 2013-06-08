@@ -14,7 +14,7 @@
 </head>
 <body>
 <div class="container">
-    <form class="form-signin" autocomplete="off">
+    <form class="form-signin" autocomplete="off" method="post">
         <h2 class="form-signin-heading">请登录</h2>
         <div class="input-xlarge input-append">
             <input type="text" class="input-block-level" placeholder="登录名" name="loginId"/>
