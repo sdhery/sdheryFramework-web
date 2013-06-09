@@ -10,11 +10,14 @@
     <link type="text/css" href="${frontPath}/admin/style/bootstrap/css/bootstraped.min.css" rel="stylesheet"/>
     <link type="text/css" href="${frontPath}/admin/style/modules/core/login.css" rel="stylesheet"/>
     <script type="text/javascript" src="${frontPath}/admin/js/jquery/jquery-1.8.3.min.js"></script>
+    <script>$.frontPath="${frontPath}"</script>
+    <script type="text/javascript" src="${frontPath}/admin/js/jqueryValidation/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="${frontPath}/admin/js/modules/core/login.js"></script>
     <script type="text/javascript" src="${frontPath}/admin/style/bootstrap/js/bootstraped.min.js"></script>
 </head>
 <body>
 <div class="container">
-    <form class="form-signin" autocomplete="off" method="post">
+    <form class="form-signin" autocomplete="off" method="post" name="loginForm" id="loginForm">
         <h2 class="form-signin-heading">请登录</h2>
         <div class="input-xlarge input-append">
             <input type="text" class="input-block-level" placeholder="登录名" name="loginId"/>

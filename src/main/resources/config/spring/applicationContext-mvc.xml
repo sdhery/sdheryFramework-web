@@ -22,12 +22,12 @@
     <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
         <property name="messageConverters">
             <util:list id="beanList">
-                <ref bean="mappingJacksonHttpMessageConverter"/>
+                <ref bean="MappingJacksonHttpMessageConverterExt"/>
             </util:list>
         </property>
     </bean>
 
-    <bean id="mappingJacksonHttpMessageConverter" class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter"/>
+    <bean id="MappingJacksonHttpMessageConverterExt" class="com.sdhery.module.core.web.jacson.MappingJacksonHttpMessageConverterExt"/>
     <bean id="contentNegotiatingViewResolver" class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
         <property name="order" value="1" />
         <property name="contentNegotiationManager">
