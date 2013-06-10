@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ include file="/FInclude/includeTaglibs.jsp" %>
+<c:set value="${sysUser:getAdminSysUser(pageContext.request)}" var="sysUser"/>${sysUser}
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container-fluid">
