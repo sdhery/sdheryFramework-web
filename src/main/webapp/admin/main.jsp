@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title></title>
+    <title>管理后台</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" href="${frontPath}/admin/style/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <link type="text/css" href="${frontPath}/admin/style/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet"/>
@@ -29,27 +29,7 @@
     <script type="text/javascript" src="${frontPath}/admin/style/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-inner">
-        <div class="container-fluid">
-            <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="#" class="brand">管理后台</a>
-            <div class="nav-collapse collapse">
-                <p class="navbar-text pull-right">
-                    Logged in as <a class="navbar-link" href="#">Username</a>
-                </p>
-                <ul class="nav">
-                    <li class="active"><a href="#">首页</a></li>
-                    <li><a href="#about">信息</a></li>
-                </ul>
-            </div><!--/.nav-collapse -->
-        </div>
-    </div>
-</div>
+<c:import url="/admin/module/core/includeHead.jsp"/>
 <div class="container-fluid">
     <div class="row-fluid">
         <div class="span3">
