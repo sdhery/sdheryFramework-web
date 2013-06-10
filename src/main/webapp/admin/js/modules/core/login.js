@@ -1,8 +1,12 @@
 var options = {
     submitHandler: function (theForm) {
         var params = $(theForm).serialize();
-        $.post($.frontPath+"/admin/loginOK.json", params, function (obj) {
-            alert(obj.result)
+        $.post($.frontPath+"/admin/loginOK.json", params, function (resultObj) {
+            if(resultObj.success){
+                window.location.href=$.frontPath+"/admin/main.jsp"
+            }else{
+                alert(resultObj.result)
+            }
         })
         return false;
     }
