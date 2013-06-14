@@ -13,13 +13,9 @@
             <div class="nav-collapse collapse">
                 <ul class="nav pull-right">
                     <li id="fat-menu" class="dropdown">
-                        <a href="#" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i>Dropdown 3 <b class="caret"></b></a>
+                        <a href="#" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i>${sysUser.loginId}<b class="caret"></b></a>
                         <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-                            <li role="presentation" class="divider"></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">退出</a></li>
                         </ul>
                     </li>
                 </ul>
