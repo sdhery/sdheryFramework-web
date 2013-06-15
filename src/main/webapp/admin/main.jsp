@@ -64,12 +64,13 @@
         </div><!--/span-->
     </div><!--/row-->
 
-    <hr>
 
-    <footer>
-        <p>&copy; Company 2013</p>
-    </footer>
 
-</div>
+</div> <hr>
+<div class="container-fluid">
+<footer>
+    <p>&copy; Company 2013</p>
+</footer>
+    </div>
 </body>
 </html>
