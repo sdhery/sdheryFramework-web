@@ -12,12 +12,13 @@
             <a href="#" class="brand">管理后台</a>
             <div class="nav-collapse collapse">
                 <ul class="nav pull-right">
-                    <li id="fat-menu" class="dropdown">
-                        <a href="#" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i>${sysUser.loginId}<b class="caret"></b></a>
+                    <div class="btn-group">
+                        <a class="btn btn-inverse"><i class="icon-user icon-white"></i>&nbsp;&nbsp;${sysUser.loginId}</a>
+                        <a href="#" id="drop3" role="button" class="btn btn-inverse dropdown-toggle" data-toggle="dropdown"><b class="caret"></b></a>
                         <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
                             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">退出</a></li>
                         </ul>
-                    </li>
+                    </div>
                 </ul>
                 <ul class="nav">
                     <li class="active"><a href="${frontPath}/admin/main.jsp">首页</a></li>
