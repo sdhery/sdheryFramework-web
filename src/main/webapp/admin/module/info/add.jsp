@@ -1,24 +1,25 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ include file="/FInclude/includeTaglibs.jsp" %>
-<form class="form-horizontal">
+<script>
+    $(function () {
+    })
+</script>
+<form class="form-horizontal well">
     <div class="control-group">
-        <label class="control-label" for="inputEmail">Email</label>
+        <label class="control-label">标题：</label>
         <div class="controls">
-            <input type="text" id="inputEmail" placeholder="Email">
+            <input type="text" id="title" placeholder="标题" class="span4"/>
         </div>
     </div>
     <div class="control-group">
-        <label class="control-label" for="inputPassword">Password</label>
+        <label class="control-label">内容：</label>
         <div class="controls">
-            <input type="password" id="inputPassword" placeholder="Password">
+            <textarea name="content" id="content" class="span4"></textarea>
         </div>
     </div>
     <div class="control-group">
         <div class="controls">
-            <label class="checkbox">
-                <input type="checkbox"> Remember me
-            </label>
-            <button type="submit" class="btn">Sign in</button>
+            <button type="submit" class="btn btn-primary">提交</button>
         </div>
     </div>
 </form>

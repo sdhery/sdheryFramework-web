@@ -13,9 +13,11 @@
             padding-top: 60px;
             padding-bottom: 40px;
         }
+
         .sidebar-nav {
             padding: 9px 0;
         }
+
         @media (max-width: 980px) {
             /* Enable use of floated navbar text */
             .navbar-text.pull-right {
@@ -27,12 +29,22 @@
     </style>
     <script type="text/javascript" src="${frontPath}/admin/js/jquery/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="${frontPath}/admin/style/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        function loadLeft() {
+            $("#loadLeft").load("${frontPath}/admin/module/core/loadLeft.jsp")
+        }
+        function loadRight() {
+            $("#loadRight").load("${frontPath}/admin/module/info/add.jsp")
+        }
+    </script>
+
 </head>
 <body>
 <c:import url="/admin/module/core/includeHead.jsp"/>
 <div class="container-fluid">
     <div class="row-fluid">
-        <div class="span3">
+
+        <div class="span2" id="loadLeft">
             <div class="well sidebar-nav">
                 <ul class="nav nav-list">
                     <li class="nav-header">Sidebar</li>
@@ -52,25 +64,29 @@
                     <li><a href="#">Link</a></li>
                     <li><a href="#">Link</a></li>
                 </ul>
-            </div><!--/.well -->
-        </div><!--/span-->
-        <div class="span9">
+            </div>
+        </div>
+
+        <div class="span10" id="loadRight">
             <div class="hero-unit">
                 <h1>Hello, world!</h1>
-                <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+
+                <p>This is a template for a simple marketing or informational website. It includes a large callout
+                    called the hero unit and three supporting pieces of content. Use it as a starting point to create
+                    something more unique.</p>
+
                 <p><a class="btn btn-primary btn-large" href="#">Learn more »</a></p>
             </div>
-            
-        </div><!--/span-->
-    </div><!--/row-->
+        </div>
 
-
-
-</div> <hr>
-<div class="container-fluid">
-<footer>
-    <p>&copy; Company 2013</p>
-</footer>
     </div>
+</div>
+
+<div class="container-fluid">
+    <hr>
+    <footer>
+        <p>&copy; Company 2013</p>
+    </footer>
+</div>
 </body>
 </html>
