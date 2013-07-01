@@ -12,7 +12,7 @@
     <script type="text/javascript" src="${frontPath}/admin/js/jquery/jquery-1.8.3.min.js"></script>
     <script>$.frontPath="${frontPath}"</script>
     <script type="text/javascript" src="${frontPath}/admin/js/jqueryValidation/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="${frontPath}/admin/js/modules/core/login.js"></script>
+    <script type="text/javascript" src="${frontPath}/admin/js/module/core/login.js"></script>
     <script type="text/javascript" src="${frontPath}/admin/style/bootstrap/js/bootstraped.min.js"></script>
 </head>
 <body>
