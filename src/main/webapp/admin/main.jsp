@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" href="${frontPath}/admin/style/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <link type="text/css" href="${frontPath}/admin/style/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="${frontPath}/js/JQueryzTreev3.5.14/css/zTreeStyle/zTreeStyle.css" type="text/css">
     <style>
         body {
             padding-top: 60px;
@@ -29,9 +30,12 @@
     </style>
     <script type="text/javascript" src="${frontPath}/admin/js/jquery/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="${frontPath}/admin/style/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="${frontPath}/js/JQueryzTreev3.5.14/js/jquery.ztree.all-3.5.min.js"></script>
     <script>
-        function loadLeft() {
-            $("#loadLeft").load("${frontPath}/admin/module/core/loadLeft.jsp")
+        function loadLeft(sysTreeId) {
+            var params = new Object();
+            params['sysTreeId'] = sysTreeId
+            $("#loadLeft").load("${frontPath}/admin/module/core/loadLeft.jsp",params)
         }
         function loadRight() {
             $("#loadRight").load("${frontPath}/admin/module/info/add.jsp")
