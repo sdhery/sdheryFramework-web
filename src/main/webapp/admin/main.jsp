@@ -28,7 +28,7 @@
             }
         }
     </style>
-    <script type="text/javascript" src="${frontPath}/admin/js/jquery/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="${frontPath}/js/jquery/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="${frontPath}/admin/style/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="${frontPath}/js/JQueryzTreev3.5.14/js/jquery.ztree.all-3.5.min.js"></script>
     <script>
