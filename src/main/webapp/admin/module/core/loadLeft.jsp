@@ -14,7 +14,7 @@
                 <div class="accordion-inner">
                     <ul class="nav nav-list">
                         <c:forEach items="${childrenSecond}" var="sysTreeSecond">
-                            <li><a href="#"><i class="icon-pencil"></i>${sysTreeSecond.sysTreeName}</a></li>
+                            <li><a href="${frontPath}/admin/module/info/add.jsp" target="contentFrame"><i class="icon-pencil"></i>${sysTreeSecond.sysTreeName}</a></li>
                         </c:forEach>
                     </ul>
                 </div>

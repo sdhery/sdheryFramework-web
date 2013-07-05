@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" href="${frontPath}/admin/style/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <link type="text/css" href="${frontPath}/admin/style/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="${frontPath}/js/JQueryzTreev3.5.14/css/zTreeStyle/zTreeStyle.css" type="text/css">
     <style>
         body {
             padding-top: 60px;
@@ -30,7 +29,6 @@
     </style>
     <script type="text/javascript" src="${frontPath}/js/jquery/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="${frontPath}/admin/style/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="${frontPath}/js/JQueryzTreev3.5.14/js/jquery.ztree.all-3.5.min.js"></script>
     <script>
         function loadLeft(sysTreeId) {
             var params = new Object();
@@ -72,15 +70,7 @@
         </div>
 
         <div class="span10" id="loadRight">
-            <div class="hero-unit">
-                <h1>Hello, world!</h1>
-
-                <p>This is a template for a simple marketing or informational website. It includes a large callout
-                    called the hero unit and three supporting pieces of content. Use it as a starting point to create
-                    something more unique.</p>
-
-                <p><a class="btn btn-primary btn-large" href="#">Learn more »</a></p>
-            </div>
+            <iframe style="border:0" width="100%" height="100%" id="contentFrame" name="contentFrame"></iframe>
         </div>
 
     </div>
