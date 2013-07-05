@@ -70,7 +70,9 @@
         </div>
 
         <div class="span10" id="loadRight">
-            <iframe style="border:0" width="100%" height="100%" id="contentFrame" name="contentFrame"></iframe>
+            <div style="width:100%;overflow:hidden;position: absolute; bottom: 0;">
+            <iframe style="border:0;height:100%;position: absolute; width: 100%;" id="contentFrame" name="contentFrame"></iframe>
+                </div>
         </div>
 
     </div>
