@@ -38,6 +38,13 @@
         function loadRight() {
             $("#loadRight").load("${frontPath}/admin/module/info/add.jsp")
         }
+        $(function(){
+            var $iframe=$('#contentFrame');
+            $iframe.load(function(){
+                $iframe.height($(this).contents().find("body").height()+20);
+                //$(this).contents().find("body").css("overflow-y","hidden");
+            })
+        });
     </script>
 
 </head>
@@ -70,9 +77,7 @@
         </div>
 
         <div class="span10" id="loadRight">
-            <div style="width:100%;overflow:hidden;position: absolute; bottom: 0;">
-            <iframe style="border:0;height:100%;position: absolute; width: 100%;" id="contentFrame" name="contentFrame"></iframe>
-                </div>
+            <iframe style="border:0;width:100%" id="contentFrame" name="contentFrame"></iframe>
         </div>
 
     </div>
