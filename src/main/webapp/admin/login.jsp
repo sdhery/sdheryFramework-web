@@ -8,7 +8,7 @@
     <title>请登录</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" href="${frontPath}/admin/style/bootstrap/css/bootstraped.min.css" rel="stylesheet"/>
-    <link type="text/css" href="${frontPath}/admin/style/modules/core/login.css" rel="stylesheet"/>
+    <link type="text/css" href="${frontPath}/admin/style/module/core/login.css" rel="stylesheet"/>
     <script type="text/javascript" src="${frontPath}/js/jquery/jquery-1.8.3.min.js"></script>
     <script>$.frontPath="${frontPath}"</script>
     <script type="text/javascript" src="${frontPath}/admin/js/jqueryValidation/jquery.validate.min.js"></script>
