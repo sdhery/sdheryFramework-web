@@ -31,8 +31,13 @@
                 size:50
             },
             west: {
-                size:240,
-                margin:10
+                size:240
+            },
+            east: {
+                size:8
+            },
+            south: {
+                size:72
             },
             center__maskContents:true
         }
@@ -51,6 +56,7 @@
 <IFRAME id="contentFrame" name="contentFrame" class="ui-layout-center" scrolling="auto" frameborder="0" ></IFRAME>
 <div class="ui-layout-north"><c:import url="/admin/module/core/includeHead.jsp"/></div>
 <DIV class="ui-layout-west" id="loadLeft"></DIV>
+<DIV class="ui-layout-east"></div>
 <div class="container-fluid ui-layout-south">
     <hr>
     <footer>

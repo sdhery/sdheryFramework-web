@@ -9,12 +9,12 @@
     <script type="text/javascript" src="${frontPath}/admin/style/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
-<form class="form-horizontal well">
+<form class="form-horizontal well" method="post" action="${frontPath}/admin/info/addOk">
     <div class="control-group">
         <label class="control-label">标题：</label>
 
         <div class="controls">
-            <input type="text" id="title" placeholder="标题" class="span4"/>
+            <input type="text" name="title" placeholder="标题" class="span4"/>
         </div>
     </div>
     <div class="control-group">
