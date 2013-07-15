@@ -30,7 +30,29 @@
 
     <servlet-mapping>
         <servlet-name>springMvc</servlet-name>
-        <url-pattern>/</url-pattern>
+        <url-pattern>/*</url-pattern>
     </servlet-mapping>
+
+    <filter>
+        <filter-name>setCharacterEncodingFilter</filter-name>
+        <filter-class>com.sdhery.module.core.filter.SetCharacterEncodingFilter</filter-class>
+        <init-param>
+            <description>???URL</description>
+            <param-name>excludeUrls</param-name>
+            <param-value>*.gif;*jpg;*.css;*.swf;*.js;*.ico;*.jpeg;*.png;*.doc;*.xsl</param-value>
+        </init-param>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+        <init-param>
+            <param-name>forceEncoding</param-name>
+            <param-value>true</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>setCharacterEncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
 
 </web-app>
