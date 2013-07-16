@@ -37,7 +37,6 @@
         <filter-name>setCharacterEncodingFilter</filter-name>
         <filter-class>com.sdhery.module.core.filter.SetCharacterEncodingFilter</filter-class>
         <init-param>
-            <description>???URL</description>
             <param-name>excludeUrls</param-name>
             <param-value>*.gif;*jpg;*.css;*.swf;*.js;*.ico;*.jpeg;*.png;*.doc;*.xsl</param-value>
         </init-param>
