@@ -42,11 +42,6 @@
             center__maskContents:true
         }
         $(function () {
-            var $iframe = $('#contentFrame');
-            $iframe.load(function () {
-                $iframe.height($(this).contents().find("body").height() + 20);
-                //$(this).contents().find("body").css("overflow-y","hidden");
-            })
             topLayout = $('body').layout(layoutSettings_Outer);
         });
     </script>
