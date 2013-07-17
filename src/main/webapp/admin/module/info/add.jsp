@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page trimDirectiveWhitespaces="true" %>
 <%@ include file="/FInclude/includeTaglibs.jsp" %>
 <!DOCTYPE html>
 <html lang="en">
