@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          version="3.0">
 
-   <servlet-mapping>
+    <servlet-mapping>
         <servlet-name>default</servlet-name>
         <url-pattern>*.jpg</url-pattern>
         <url-pattern>*.gif</url-pattern>
@@ -45,10 +45,14 @@
     <!-- Apache Shiro -->
     <filter>
         <filter-name>adminPrivilegeFilter</filter-name>
-        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+        <filter-class>com.sdhery.module.privilege.filter.PrivilegeFilter</filter-class>
         <init-param>
-            <param-name>targetFilterLifecycle</param-name>
-            <param-value>true</param-value>
+            <param-name>excludeUrls</param-name>
+            <param-value>/admin/js/;/admin/style/;/admin/login.jsp</param-value>
+        </init-param>
+        <init-param>
+            <param-name>targetBean</param-name>
+            <param-value>adminPrivilegeFilter</param-value>
         </init-param>
     </filter>
     <filter-mapping>
